@@ -1,0 +1,41 @@
+{
+
+  "migration_id": 2016092220503929,
+
+  "models": {
+
+    "Arc": {
+
+      "table": "arcs",
+
+      "columns": [
+        {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
+        {"name": "user_id", "type": "int", "properties": {}},
+        {"name": "activity_name", "type": "string", "properties": {}},
+        {"name": "unit_name", "type": "string", "properties": {}},
+        {"name": "unit_qty", "type": "int", "properties": {}},
+        {"name": "value", "type": "int", "properties": {}},
+        {"name": "created_at", "type": "datetime", "properties": {}},
+        {"name": "updated_at", "type": "datetime", "properties": {}}
+      ]
+
+    },
+
+    "User": {
+
+      "table": "users",
+
+      "columns": [
+        {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
+        {"name": "email", "type": "string", "properties": {"unique":true}},
+        {"name": "password", "type": "string", "properties": {}},
+        {"name": "username", "type": "string", "properties": {}},
+        {"name": "created_at", "type": "datetime", "properties": {}},
+        {"name": "updated_at", "type": "datetime", "properties": {}}
+      ]
+
+    }
+
+  }
+
+}
